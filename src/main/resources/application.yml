@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+jwt:
+  secret: secret
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: root
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        default_schema: tfg
+        dialect: org.hibernate.dialect.PostgreSQLDialect
