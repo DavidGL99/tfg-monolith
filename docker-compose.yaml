@@ -3,7 +3,7 @@ services:
   product-service:
     build: ./
     ports:
-      - "8088:8088"
+      - "80:80"
     environment:
       - WAIT_HOSTS=postgres:5432
       - DATABASE_HOST=postgres
