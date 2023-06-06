@@ -26,14 +26,14 @@ public class UserService {
 
     public User save(UserDto dto) {
         Optional<User> user = userRepository.findByEmail(dto.getEmail());
-        if(user.isPresent())
+        if (user.isPresent())
             return null;
         String password = passwordEncoder.encode(dto.getPassword());
-        User authUser = new User(
-                dto.getName(),
-                dto.getLastnames(),
-                dto.getEmail(),
-                dto.getPassword());
+        User authUser = new User();
+        authUser.setName(dto.getName());
+        authUser.setLastnames(dto.getLastnames());
+        authUser.setEmail(dto.getEmail());
+        authUser.setPassword(dto.getPassword());
         return userRepository.save(authUser);
     }
 

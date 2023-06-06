@@ -11,6 +11,7 @@ import ual.tfg.monolith.service.UserService;
 
 @Controller
 @RequestMapping("/review")
+@CrossOrigin(allowedHeaders = "*")
 public class ReviewController {
 
     @Autowired
