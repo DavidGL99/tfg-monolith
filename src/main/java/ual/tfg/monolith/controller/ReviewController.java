@@ -9,9 +9,9 @@ import ual.tfg.monolith.dto.ReviewRequestDto;
 import ual.tfg.monolith.service.ReviewService;
 import ual.tfg.monolith.service.UserService;
 
-@Controller
-@CrossOrigin(allowedHeaders = "*")
+@RestController
 @RequestMapping("/review")
+@CrossOrigin(allowedHeaders = "*")
 public class ReviewController {
 
     @Autowired

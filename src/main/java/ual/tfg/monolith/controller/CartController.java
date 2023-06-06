@@ -13,9 +13,9 @@ import ual.tfg.monolith.service.UserService;
 
 import java.util.List;
 
-@Controller
-@CrossOrigin(allowedHeaders = "*")
+@RestController
 @RequestMapping("/cart")
+@CrossOrigin(allowedHeaders = "*")
 public class CartController {
     @Autowired
     CartService cartService;

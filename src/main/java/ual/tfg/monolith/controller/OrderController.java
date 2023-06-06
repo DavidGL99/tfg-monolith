@@ -12,9 +12,9 @@ import ual.tfg.monolith.service.UserService;
 
 import java.util.List;
 
-@Controller
-@CrossOrigin(allowedHeaders = "*")
+@RestController
 @RequestMapping("/order")
+@CrossOrigin(allowedHeaders = "*")
 public class OrderController {
     @Autowired
     OrderService orderService;
