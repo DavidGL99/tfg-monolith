@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.*;
 import ual.tfg.monolith.dto.TokenDto;
 import ual.tfg.monolith.dto.UserDto;
 import ual.tfg.monolith.entity.User;
-import ual.tfg.monolith.security.SecurityConfig;
 import ual.tfg.monolith.service.UserService;
 
 @RestController
