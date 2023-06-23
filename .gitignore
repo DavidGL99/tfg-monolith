@@ -1,5 +1,4 @@
 HELP.md
-target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
@@ -64,7 +63,10 @@ npm-debug.log
 .history/*
 
 # Miscellaneous
-
+/tfg-front/.angular/cache
+tfg-front/.angular/cache
+tfg-front/.angular/**
+tfg-front/.angular/cache/**
 /tfg-front/.sass-cache/
 /tfg-front/connect.lock
 /tfg-front/coverage
