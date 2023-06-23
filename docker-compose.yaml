@@ -1,5 +1,13 @@
 version: '3'
 services:
+  web: 
+    build: './tfg-front'
+    ports: 
+      - 80:80
+    environment:
+        - BACKEND_HOST=postgres
+
+
   product-service:
     build: ./
     ports:
