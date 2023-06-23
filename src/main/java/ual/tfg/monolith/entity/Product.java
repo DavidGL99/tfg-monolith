@@ -21,13 +21,10 @@ public class Product {
     @Column(columnDefinition = "serial4")
     Long id;
     @Column(name = "name")
-
     private String name;
     @Column(name = "price")
-
     private String price;
     @Column(name = "url")
-
     private String url;
     @Column(name = "categoria")
     private String categoria;
