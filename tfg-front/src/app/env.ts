@@ -1,1 +1,1 @@
-export const GATEWAY_URL = 'http://${$ENV.BACKEND_HOST}:8080'
+export const GATEWAY_URL = 'http://15.237.94.198:80'
