@@ -1,0 +1,77 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/tfg-front/dist
+/tfg-front/tmp
+/tfg-front/out-tsc
+/tfg-front/bazel-out
+
+# Node
+tfg-front/node_modules/
+npm-debug.log
+/tfg-front/yarn-error.log
+
+# IDEs and editors
+/tfg-front/.idea/
+/tfg-front/.project
+/tfg-front/.classpath
+/tfg-front/.c9/
+/tfg-front/*.launch
+/tfg-front/.settings/
+/tfg-front/*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+
+/tfg-front/.sass-cache/
+/tfg-front/connect.lock
+/tfg-front/coverage
+/tfg-front/libpeerconnection.log
+/tfg-front/testem.log
+/tfg-front/typings
+
+# System files
+/tfg-front/.DS_Store
+/tfg-front/Thumbs.db

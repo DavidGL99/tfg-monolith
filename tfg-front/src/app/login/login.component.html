@@ -1,0 +1,37 @@
+<ng-container *ngIf="failed; then loggedIn; else loggedOut"> </ng-container>
+
+<ng-template #loggedIn>
+   <div class="login">
+      <h2 class="text-danger">Login</h2>
+      <div class="form">
+         <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label text-danger">Correo electrónico</label>
+            <input type="email" class="form-control border border-danger" id="emailForm" placeholder="name@example.com" [(ngModel)]="email" />
+         </div>
+         <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label text-danger">Contraseña</label>
+            <input type="password" class="form-control border border-danger" id="passwordForm" placeholder="*****" [(ngModel)]="password" />
+         </div>
+         <p class="redirect" [routerLink]="'/signup'"> ¿No tienes una cuenta ?</p>
+         <button class="btn btn-primary login-button" type="button" id="login" (click)="doLogin()">Aceptar</button>
+      </div>
+   </div>
+</ng-template>
+<ng-template #loggedOut>
+   <div class="login">
+      <h2>Login</h2>
+      <div class="form">
+         <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control border" id="emailForm" placeholder="name@example.com" [(ngModel)]="email" />
+         </div>
+         <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control border" id="passwordForm" placeholder="*****" [(ngModel)]="password" />
+         </div>
+         <p class="redirect" [routerLink]="'/signup'"> ¿No tienes una cuenta ?</p>
+
+         <button class="btn btn-primary login-button" type="button" id="login" (click)="doLogin()">Aceptar</button>
+      </div>
+   </div>
+</ng-template>

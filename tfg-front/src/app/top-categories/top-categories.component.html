@@ -1,0 +1,15 @@
+<h2>Categorias destacadas</h2>
+
+<div class="top-categories-items">
+   <div class="category-list">
+    <div *ngFor="let category of categories">
+      <div class="category-frame">
+        <img class="navbar-logo" src={{category.path}} alt="logo" [routerLink]="'/catalogue'" [queryParams]="{category: category.index}"/>
+      </div>
+      <p>{{category.name}}</p>
+
+    </div>
+
+   </div>
+
+</div>

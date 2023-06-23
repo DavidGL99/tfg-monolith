@@ -1,0 +1,44 @@
+<div class="cart-view">
+   <div class="cart">
+      <div class="titles">
+         <h2>Carrito de {{ name }}</h2>
+         <h2>Total : {{ price }} €</h2>
+      </div>
+
+      <div class="item-frame" *ngFor="let item of cartItems">
+         <img class="product-img" src="{{ item.producto.url }}" alt="logo" />
+         <div id="content">
+            <p id="name">{{ item.producto.name }}</p>
+            <p id="price">{{ item.producto.price }} €</p>
+         </div>
+         <button style="height: 35px;align-self: center;" class="btn btn-danger" id="item-bottom" type="button" (click)="delete(item.producto.id)">Eliminar</button>
+
+      </div>
+   </div>
+   <div class="detalle-pedido">
+      <h4 class="detail-title">Detalle del pedido</h4>
+      <label for="form" class="form-label-cart">Provincia</label>
+      <input type="text" class="form-control border" id="formcart" placeholder="Almeria" [(ngModel)]="provincia" />
+
+      <label for="form" class="form-label-cart">Codigo postal</label>
+      <input type="number" class="form-control border" id="formcart" placeholder="12345" [(ngModel)]="codigo" />
+
+      <label for="form" class="form-label-cart">Direccion</label>
+      <input type="email" class="form-control border" id="formcart" placeholder="correo_de_ejemplo@gmail.com" [(ngModel)]="direccion" />
+
+      <h4 class="detail-title">Detalle del pago</h4>
+
+      <label for="form" class="form-label-cart">Numero de tarjeta</label>
+      <input type="text" class="form-control border" id="formcart" placeholder="12345" [(ngModel)]="tarjeta" />
+
+      <label for="form" class="form-label-cart">CVV</label>
+      <input type="text" class="form-control border" id="formcart" placeholder="12345" [(ngModel)]="cvv" />
+
+      <label for="form" class="form-label-cart">Fecha de caducidad</label>
+      <input type="text" class="form-control border" id="formcart" placeholder="12345" [(ngModel)]="fechaCad" />
+
+      <div class="button-div">
+         <button class="btn btn-primary" id="item-bottom" type="button" (click)="buy()">Comprar</button>
+      </div>
+   </div>
+</div>

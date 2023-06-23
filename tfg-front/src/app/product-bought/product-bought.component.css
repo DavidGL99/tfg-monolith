@@ -1,0 +1,164 @@
+h2 {
+  margin: 3% 0% 0% 10%;
+
+}
+
+h4 {
+  margin-bottom: 0px;
+  margin-top: 3%;
+}
+.item-frame{
+  display: flex;
+  flex-direction: row;
+  background-color: #f9f9f973;
+  border: 1px black solid;
+  margin: 30px;
+  padding: 20px;
+  width: 80%;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#name{
+  font-size: 20px;
+}
+
+#price{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#content{
+display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 50%;
+    width: 100%;
+    /* margin-top: auto; */
+    padding: 0px 20px 0px 20px;
+}
+
+
+
+.item-button{
+width: 100%;
+}
+
+.button-div{
+  align-items: center;
+  width: 25%;
+
+  display: flex;
+  padding-right: 30px;
+}
+
+.product-img{
+  height: 15%;
+  width: 15%;
+}
+
+
+
+.cart-view{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+
+.titles{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 10%;
+}
+
+
+
+
+
+
+p, h1, h2, h3{
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+h1{
+  font-size: 40px;
+
+}
+.year-runetime-genre > p{
+  font-size: 13px;
+}
+#plot{
+  font-size: 17px;
+  padding-right: 40px;
+}
+#director{
+  font-size: 13px;
+}
+.reviews{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f9f9f973 ;
+  border-bottom: 1px black solid;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  padding: 0% 5% 2% 6%;
+
+}
+
+.reviews > h1{
+  margin-left: 70px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.review-header{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+.review-card{
+  border-radius: 8px;
+  border: 1px solid #45b2ae69;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+
+}
+
+.review-card > p {
+  margin-left: 50px;
+}
+
+.review-card> .score > .star > p{
+  margin-left: 50px;
+}
+.score{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.star{
+  display: flex;
+  flex-direction: row;
+  margin-right: 75px;
+}
+

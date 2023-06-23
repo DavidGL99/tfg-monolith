@@ -1,0 +1,23 @@
+<div class="review-form">
+   <h1>¡Escribe tu reseña!</h1>
+   <form [formGroup]="form">
+      <div class="rating-star">
+         <h3 class="review-tittle">Nota</h3>
+         <ngx-star-rating id="star-form" formControlName="rating" [id]="'rating'"></ngx-star-rating>
+      </div>
+   </form>
+
+   <div class="text-review">
+      <h3 class="review-tittle">Titulo</h3>
+
+      <textarea id="w3review" name="w3review" rows="1" cols="1" [(ngModel)]="headline"> </textarea>
+      <h3 class="review-tittle">Descripción</h3>
+
+      <textarea id="w3review" name="w3review" rows="14" cols="79" [(ngModel)]="bodyReview"> </textarea>
+   </div>
+
+   <div class="div-button">
+      <button class="btn btn-danger" mat-raised-button (click)="onNoClick()">Cancelar</button>
+      <button class="btn btn-primary" mat-raised-button color="primary" (click)="submitReview()">Enviar</button>
+   </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="most-reviewed">
+   <h2 style="margin-top: 50px; margin-left: 90px">Productos más reseñados</h2>
+
+   <div class="list">
+      <div class="item" *ngFor="let item of products">
+            <div class="item-frame" [routerLink]="'/product/'" [queryParams]="{ id: item.producto.id }">
+               <img class="product-img" src="{{ item.producto.url }}" alt="logo" />
+               <div id="content">
+                  <p id="name">{{ item.producto.name }}</p>
+
+                  <div class="review-data">
+                    <div class="star">
+                      <p id="media">{{ item.media }}/5</p>
+                      <svg
+                         style="fill: goldenrod"
+                         class="ipl-icon ipl-star-icon"
+                         xmlns="http://www.w3.org/2000/svg"
+                         fill="#000000"
+                         height="24"
+                         viewBox="0 0 26 26"
+                         width="24"
+                      >
+                         <path d="M0 0h24v24H0z" fill="none"></path>
+                         <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                         <path d="M0 0h24v24H0z" fill="none"></path>
+                      </svg>
+                   </div>
+                     <p id="media">Número de reseñas: {{ item.numberOfReviews }}</p>
+                  </div>
+               </div>
+            </div>
+
+      </div>
+   </div>
+</div>

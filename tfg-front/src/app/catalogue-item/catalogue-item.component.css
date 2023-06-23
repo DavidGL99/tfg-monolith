@@ -1,0 +1,41 @@
+.item-frame{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#name{
+  font-size: 16px;
+}
+
+#price{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#content{
+display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 50%;
+    /* margin-top: auto; */
+    padding: 0px 20px 0px 20px;
+}
+
+
+
+#item-buttom{
+  align-self: bottom;
+  margin-bottom: 40px;
+}
+
+.button-div{
+  text-align: center;
+  align-items: flex-end;
+  margin-top: auto;
+  padding-bottom: 5%;
+}
+
+.product-img{
+  padding: 30px;
+}

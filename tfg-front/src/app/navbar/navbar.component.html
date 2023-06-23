@@ -1,0 +1,80 @@
+<nav>
+   <img class="navbar-logo" src="../../assets/logo.png" alt="logo" [routerLink]="'/'" />
+
+   <div class="nav-items">
+      <div class="dropdown">
+         <button class="btn btn-light dropdown-toggle" type="button" id="categories" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ category }}
+         </button>
+         <div class="dropdown-menu category-menu" aria-labelledby="dropdownMenuButton">
+            <div *ngFor="let category of categories">
+               <div class="dropdown-item" [routerLink]="'/catalogue'" [queryParams]="{ category: category.id }" (click)="setCategory(category.name)">
+                  {{ category.name }}
+               </div>
+            </div>
+         </div>
+      </div>
+      <input type="text" class="form-control" placeholder="Buscar" [(ngModel)]="search" aria-label="" aria-describedby="basic-addon1" (input)="doSearch()"/>
+   </div>
+
+   <div class="nav-icons">
+      <img class="navbar-icon" src="../../assets/user.png" alt="logo" />
+      <div class="nav-items-login">
+         <div class="dropdown2">
+            <button
+               class="btn btn-light dropdown-toggle icon-button"
+               type="button"
+               id="login"
+               data-toggle="dropdown"
+               aria-haspopup="true"
+               aria-expanded="false"
+               *ngIf="!name"
+            >
+               Mi Cuenta {{ name }}
+            </button>
+            <button
+               class="btn btn-light dropdown-toggle icon-button"
+               type="button"
+               id="login"
+               data-toggle="dropdown"
+               aria-haspopup="true"
+               aria-expanded="false"
+               *ngIf="name"
+            >
+               Hola! {{ name }}
+            </button>
+            <div class="dropdown-menu login-menu" aria-labelledby="dropdownMenuButton">
+               <ng-container *ngIf="name; then loggedIn; else loggedOut"> </ng-container>
+
+               <ng-template #loggedIn>
+                  <div class="dropdown-item" [routerLink]="'/bought'">Mis compras</div>
+                  <div class="dropdown-item" (click)="logout()">Log out</div>
+               </ng-template>
+               <ng-template #loggedOut>
+                  <div class="dropdown-item" [routerLink]="'/login'">Login</div>
+                  <div class="dropdown-item" [routerLink]="'/signup'">Registro</div>
+               </ng-template>
+            </div>
+         </div>
+      </div>
+
+      <img class="navbar-icon" src="../../assets/carrito.png" alt="logo" />
+      <div class="nav-items-carrito">
+         <div class="dropdown">
+            <button
+               class="btn btn-light dropdown-toggle icon-button"
+               type="button"
+               id="carrito"
+               data-toggle="dropdown"
+               aria-haspopup="true"
+               aria-expanded="false"
+            >
+               Carrito
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+               <div class="dropdown-item" (click)="goToCart()">Carrito</div>
+            </div>
+         </div>
+      </div>
+   </div>
+</nav>

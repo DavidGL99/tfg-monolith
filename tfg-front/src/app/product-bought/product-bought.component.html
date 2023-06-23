@@ -1,0 +1,19 @@
+<div class="titles">
+  <h2>Mis compras</h2>
+
+</div>
+<div class="product">
+
+
+  <div class="item-frame" *ngFor="let item of products">
+     <img class="product-img" src="{{ item.producto.url }}" alt="logo" [routerLink]="'/product/'" [queryParams]="{ id: item.producto.id }"/>
+     <div id="content" [routerLink]="'/product/'" [queryParams]="{ id: item.producto.id }">
+        <p id="name">{{ item.producto.name }}</p>
+
+     </div>
+     <div class="button-div">
+      <button class="btn btn-primary item-button" type="button"  (click)="openDialog(item.producto.id)" >Escribir una reseña</button>
+   </div>
+  </div>
+
+</div>

@@ -1,0 +1,139 @@
+body, textarea { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.product{
+  width: 100%;
+  height: 100%;
+  margin-top: 1%;
+  padding: 1%;
+
+}
+
+
+.item-frame{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #f9f9f973;
+  border-top: 1px black solid;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  padding-left: 3%;
+  padding-top: 3%;
+
+}
+
+#product-bottom{
+  width: 95%;
+}
+
+#content{
+  background-color: transparent;
+}
+
+#name{
+  font-size: 20px;
+  padding-top: 7%;
+  width: 95%;
+}
+
+#price{
+  font-size: 26px;
+  padding-top: 2%;
+  padding-bottom: 10%;
+  font-weight: bold;
+
+}
+
+
+.product-img{
+  width: 30%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+  height: 30%;
+}
+
+
+.ratings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom:30px
+}
+
+.ratings > div > p{
+  display: flex;
+  margin-right: 100px;
+
+}
+
+#poster {
+  border-radius: 13px 0 0 13px ;
+  pointer-events: none;
+  max-height: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+#icon {
+  margin-left: 20px;
+  max-width: 50px;
+}
+
+.personal-review{
+  display: flex;
+flex-direction: row-reverse;
+align-items: center;
+width: 100%;
+text-align: center;
+}
+
+.card-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.reviews{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f9f9f973 ;
+  border-bottom: 1px black solid;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  padding: 0% 5% 2% 6%;
+
+}
+
+
+.review-item{
+  background-color: rgb(241, 241, 241);
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.title-div{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.star{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding-right: 50px;
+}
+
+
+.email{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.title{
+  font-size: 16px;
+  font-weight: bold;
+}

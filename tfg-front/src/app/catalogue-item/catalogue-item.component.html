@@ -1,0 +1,14 @@
+<div class="item-frame" >
+   <div class="item-frame" [routerLink]="'/product/'" [queryParams]="{ id: this.id }">
+
+
+      <img class="product-img" src="{{ url }}" alt="logo" />
+      <div id="content">
+         <p id="name">{{ name }}</p>
+         <p id="price">{{ price }}</p>
+      </div>
+    </div>
+      <div class="button-div">
+         <button class="btn btn-primary" id="item-bottom" type="button" (click)="addToCart()">Añadir al carrito</button>
+      </div>
+</div>

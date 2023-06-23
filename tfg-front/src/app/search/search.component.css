@@ -1,0 +1,26 @@
+
+.catalogue{
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  height:  100%;
+}
+
+.product-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.list-item{
+  background-color: #f9f9f973 ;
+  border: 1px black solid;
+  margin : 30px;
+}
+
+.product-item{
+  width: 300px;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}

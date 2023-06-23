@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.body-items{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+p{
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+.rating-star>h3 , .text-review> h2{
+  margin-right: 370px;
+}
+.rating-star{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: center;
+}
+div.stars {
+  width: auto !important;
+  box-shadow: none;
+}
+input.star:checked ~ label.star:before {
+  color: gold !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+
+}
+label.star:before {
+  float: right;
+  padding: 0;
+  font-size: 25px;
+  color: #444;
+  transition: all .2s;
+  box-shadow: none;
+}
+.text-review{
+  display: flex;
+  flex-direction: column;
+}
+
+.review-form{
+  padding: 40px;
+}
+
+.review-tittle{
+  padding-top: 15px;
+}
+
+
+
+.div-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.div-button > button{
+  width: 200px;
+}
+
+
