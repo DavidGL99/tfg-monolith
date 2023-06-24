@@ -11,7 +11,7 @@ import ual.tfg.monolith.service.UserService;
 
 @RestController
 @RequestMapping("/api/review")
-@CrossOrigin(origins = "*")
+@CrossOrigin(allowedHeaders = "*")
 public class ReviewController {
 
     @Autowired
