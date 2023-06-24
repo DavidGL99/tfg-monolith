@@ -11,7 +11,7 @@ import ual.tfg.monolith.service.UserService;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(allowedHeaders = "*")
+@CrossOrigin(origins = "*")
 public class AuthUserController {
 
     @Autowired

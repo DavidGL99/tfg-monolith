@@ -15,7 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/cart")
-@CrossOrigin(allowedHeaders = "*")
+@CrossOrigin(origins = "*")
 public class CartController {
     @Autowired
     CartService cartService;
