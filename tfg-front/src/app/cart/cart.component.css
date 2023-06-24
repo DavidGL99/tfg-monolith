@@ -42,15 +42,19 @@ display: flex;
 }
 
 
+#item-buttom-buy{
+  align-self: bottom;
+  width: 300px;
+}
 
-#item-buttom{
+#item-buttom-buy{
   align-self: bottom;
 }
 
 .button-div{
   text-align: center;
   align-items: flex-end;
-  margin-top: 3.5%;
+  margin-top: 50px;
 }
 
 .product-img{

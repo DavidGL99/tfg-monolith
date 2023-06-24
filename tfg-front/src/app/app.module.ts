@@ -12,7 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {  provideAnimations } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
 import { NgxStarRatingModule } from 'ngx-star-rating';
 import { CartComponent } from './cart/cart.component';
@@ -20,6 +20,10 @@ import { SearchComponent } from './search/search.component';
 import { DialogOverviewExampleDialog, ProductBoughtComponent } from './product-bought/product-bought.component';
 import { MostReviewedComponent } from './most-reviewed/most-reviewed.component';
 import { HomeComponent } from './home/home.component';
+import { ToastrComponentlessModule, ToastrService, provideToastr } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -37,6 +41,7 @@ import { HomeComponent } from './home/home.component';
     ProductBoughtComponent,
     MostReviewedComponent,
     HomeComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -47,6 +52,13 @@ import { HomeComponent } from './home/home.component';
     MatDialogModule,
     ReactiveFormsModule,
     NgxStarRatingModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot({
+      timeOut: 3000,
+      positionClass: 'toast-top-center',
+      preventDuplicates: true,
+      closeButton: true
+   })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -53,11 +53,17 @@ export class ProductComponent {
  }
 
    addToCart(): void {
+      var idProd = -1;
+      this.route.queryParams.subscribe((params) => {
+         if (params['id']) {
+            idProd = params['id']
+         }
+      });
+
       if (localStorage.getItem('email')) {
          this.email = localStorage.getItem('email');
          this.jwt = localStorage.getItem('jwt');
-
-         this.cartService.addToCart(this.email, Number(this.id), 1, this.jwt).subscribe();
+         this.cartService.addToCart(this.email, idProd, 1, this.jwt).subscribe();
          this.router.navigateByUrl(`/cart`);
       } else {
          this.router.navigateByUrl(`/login`);
