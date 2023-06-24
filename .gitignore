@@ -21,7 +21,6 @@ HELP.md
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
-/dist/
 /nbdist/
 /.nb-gradle/
 build/
@@ -35,7 +34,6 @@ build/
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Compiled output
-/tfg-front/dist
 /tfg-front/tmp
 /tfg-front/out-tsc
 /tfg-front/bazel-out
