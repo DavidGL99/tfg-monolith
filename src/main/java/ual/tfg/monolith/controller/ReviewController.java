@@ -10,7 +10,7 @@ import ual.tfg.monolith.service.ReviewService;
 import ual.tfg.monolith.service.UserService;
 
 @RestController
-@RequestMapping("/review")
+@RequestMapping("/api/review")
 @CrossOrigin(allowedHeaders = "*")
 public class ReviewController {
 

@@ -20,7 +20,7 @@ import ual.tfg.monolith.service.UserService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/order")
+@RequestMapping("/api/order")
 @CrossOrigin(allowedHeaders = "*")
 public class OrderController {
     @Autowired

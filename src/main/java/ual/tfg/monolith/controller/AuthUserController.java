@@ -10,7 +10,7 @@ import ual.tfg.monolith.entity.User;
 import ual.tfg.monolith.service.UserService;
 
 @RestController
-@RequestMapping("/auth")
+@RequestMapping("/api/auth")
 @CrossOrigin(allowedHeaders = "*")
 public class AuthUserController {
 

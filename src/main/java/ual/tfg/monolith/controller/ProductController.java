@@ -10,7 +10,7 @@ import ual.tfg.monolith.service.ProductService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/product")
+@RequestMapping("/api/product")
 @CrossOrigin(allowedHeaders = "*")
 public class ProductController {
 
